@@ -11,17 +11,21 @@
 <body>
     <nav>
         <div class="search">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
+            <input type="text" placeholder="Search" id="search">
+            <button id="search-button">Search</button>
         </div>
         <div class="logo">
             <img src="images/fear.svg" alt="logo" class="cropped-logo">
         </div>
     </nav>
     <main>
-        <div class="card" id="add-book">
-            <h1>Add Book</h1>
+        <div class="books">
+            <div class="card" id="add-book">
+                <h1>Add Book</h1>
+            </div>
         </div>
+        <br>
+        <div id="search-results"></div>
     </main>
     <footer>
         <p>&copy; 2020 FearQuare</p>
@@ -37,13 +41,13 @@
                 <label for="pages">Pages</label>
                 <input type="number" id="pages" name="pages" required>
                 <label for="status">Status</label>
-                <select id="status" name="status">
+                <select id="status" name="status" required>
                     <option value="read">Read</option>
-                    <option value="not-read" selected>Want to Read</option>
+                    <option value="want-to-read" selected>Want to Read</option>
                     <option value="reading">Reading</option>
                     <option value="dropped">Dropped</option>
                 </select>
-                <button type="submit">Add</button>
+                <button type="submit" id="add-book-button">Add</button>
             </form>
             <button id="closePopup">Close</button>
         </div>

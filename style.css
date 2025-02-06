@@ -202,6 +202,13 @@ main {
     background: #ECF0F1;
     display: flex;
     padding: 1rem;
+    flex-direction: column;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 footer {
@@ -225,6 +232,9 @@ footer {
     text-align: center;
     color: white;
     font-weight: bold;
+    flex-direction: column;
+    margin: 1rem; /* Add margin to prevent overlap */
+    gap: 2rem;
 }
 
 .card:hover {
